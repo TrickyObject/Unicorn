@@ -37,12 +37,14 @@ public class RealisationXML extends Application {
         loader.setLocation(xmlUrl);
         Parent root = loader.load();
 
+//        Parent root = FXMLLoader.load(getClass().getResource("/sample.fxml"));
+
         Scene scene = new Scene(root);
 
         stage.setScene(scene);
 
-        stage.setWidth(250);
-        stage.setHeight(200);
+//        stage.setWidth(250);
+//        stage.setHeight(200);
 
         stage.show();
 

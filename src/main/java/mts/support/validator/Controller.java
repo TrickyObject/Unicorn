@@ -10,8 +10,8 @@ public class Controller {
     private Button button;
 
     @FXML
-    private void click(ActionEvent event) {
-        button.setText("You've clicked!");
+    private void validateClick(ActionEvent event) {
+        button.setText("Исполнено!");
     }
 
 

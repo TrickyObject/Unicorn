@@ -5,13 +5,61 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<Group fx:id="root" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mts.support.validator.Controller">
-    <Button text="Валидировать?" onAction="#click" fx:id="button"  />
-</Group>
+<?import javafx.geometry.Insets?>
+<VBox fx:id="root" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="mts.support.validator.Controller"
+      prefHeight="200.0" prefWidth="300.0">
 
-<!--<AnchorPane xmlns="http://javafx.com/javafx"-->
-<!--            xmlns:fx="http://javafx.com/fxml"-->
-<!--            prefHeight="400.0" prefWidth="600.0">-->
+    <HBox>
+        <padding>
+            <Insets top="10" right="10" bottom="10" left="10"/>
+        </padding>
+        <Button fx:id="button" text="Валидировать?" onAction="#validateClick">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+        </Button>
+    </HBox>
 
 
-<!--</AnchorPane>-->
+    <HBox>
+        <padding>
+            <Insets top="10" right="10" bottom="10" left="10"/>
+        </padding>
+        <Label fx:id="pathToXMLLabel" text="Путь до XML">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+        </Label>
+        <TextField fx:id="pathToXML" text="">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+        </TextField>
+    </HBox>
+
+    <HBox>
+        <padding>
+            <Insets top="10" right="10" bottom="10" left="10"/>
+        </padding>
+
+        <Label fx:id="pathToXSDLabel" text="Путь до XML">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+        </Label>
+        <TextField fx:id="pathToXSD" text="">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+        </TextField>
+
+    </HBox>
+
+
+
+</VBox>
+<!--<Group fx:id="root" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mts.support.validator.Controller">-->
+<!--    <Button text="Валидировать?" onAction="#validateClick" fx:id="button"  />-->
+<!--</Group>-->
